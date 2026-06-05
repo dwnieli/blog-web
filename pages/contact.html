@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link href="../css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/870a34a90c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&display=swap" rel="stylesheet">
+    <!-- - -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <!-- - -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="../index.html"><i class="fa-regular fa-house"></i>Página inicial</a>
+        <a href="../pages/about.html"><i class="fa-solid fa-spiral"></i>Sobre mim</a>
+        <a href="../pages/curriculum.html"><i class="fa-solid fa-code"></i>Curriculum</a>
+        <a href="../pages/receitas.html"><i class="fa-solid fa-pizza-slice"></i>Receitas</a>
+    </nav>
+
+    <main id="voltar">
+        <div class="main">
+            <h1 class="titulo">Contato</h1>
+
+            <form>
+                <div class="formulario">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <br>
+
+                <div class="formulario">
+                    <label for="datanasc">Data de nascimento:</label>
+                    <input type="date" name="datanasc" id="datanasc" placeholder="dd/mm/aaaa" required>
+                </div>
+                <br>
+
+                <div class="formulario">
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" name="telefone" id="telefone" placeholder="(00) 0 0000-0000" required>
+                </div>
+                <br>
+
+                <div class="formulario">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <br>
+
+                <div class="formulario">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="********" required>
+                </div>
+                <br>
+
+                <div class="formulario">
+                    <label for="senha">Confirme sua senha:</label>
+                    <input type="password" name="senha" id="senha2" placeholder="********" required>
+                </div>
+                <br>
+
+                <div class="formulario">
+                    <label for="foto">Foto de perfil:</label>
+                    <input type="file" name="foto" id="foto">
+                </div>
+                <br>
+
+                <div class="formulario">
+                    <label>Tecnologia Web favorita:</label>
+                    <label for="html">
+                        <input type="checkbox" name="html" id="html">
+                        HTML
+                    </label>
+                    <label for="css">
+                        <input type="checkbox" name="css" id="css">
+                        CSS
+                    </label>
+                    <label for="js">
+                        <input type="checkbox" name="js" id="js">
+                        JavaScript
+                    </label>
+                </div>
+
+                <br>
+                <div class="formulario">
+                    <label for="cor">Cor favorita:</label>
+                    <input type="color" name="cor" id="cor">
+                </div>
+                <br>
+
+                <div class="formulario">
+                    <label for="nota">Nota pro blog:</label>
+                    <input type="range" name="nota" id="nota" min="0" max="100" required>
+                </div>
+            </form>
+
+            <div class="botaoformulario">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+            <br><br>
+            <hr>
+            <footer>
+                <p>Feito com ❤︎⁠ por Daniéli</p>
+            </footer>
+
+        </div>
+    </main>
+
+    <button class="botaofixed">
+        <a href="#voltar"><i id="botaovoltar" class="fa-solid fa-angles-up"></i></a>
+    </button>
+
+</body>
+
+</html>
