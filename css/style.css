@@ -10,6 +10,7 @@ fontes google
 - jersey 15 */
 
 
+
 /* fontes */
 
 .elsie-swash-caps-regular,
@@ -47,6 +48,9 @@ th {
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 /* icones */
 
@@ -113,31 +117,36 @@ i {
 /* nav bar */
 
 nav {
+    background-color: #450E30;
     display: flex;
-    background-color: #fd789d;
-    justify-content: center;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: #450E30;
+    align-items: center;
+    justify-content: space-evenly;
     position: sticky;
     top: 0;
+    padding: 15px;
 }
 
 nav a {
     color: #450E30;
     background-color: white;
-    border-color: #450E30;
     border-radius: 22px;
     font-size: 20px;
-    margin: 18px;
-    padding: 18px;
+    margin: 10px;
+    padding: 15px;
     text-decoration: none;
-    border-style: solid;
 }
 
 nav a:hover {
-    background-color: #450E30;
-    color: white;
+    background-color: #f6d8d6;
+}
+
+span {
+    color: #450E30;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+
 }
 
 
@@ -145,11 +154,13 @@ nav a:hover {
 
 body {
     background-color: #fd789d;
+    margin: 0;
+    padding: 0;
 }
 
 .main {
     padding: 100px;
-    margin: 30px 100px;
+    margin: 30px 200px;
     background-color: #faffc7;
     border-style: double;
     border-color: #450E30;
