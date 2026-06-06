@@ -9,8 +9,6 @@ fontes google
 - averia
 - jersey 15 */
 
-
-
 /* fontes */
 
 .elsie-swash-caps-regular,
@@ -48,9 +46,6 @@ th {
     font-style: normal;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 /* icones */
 
@@ -103,14 +98,42 @@ i {
     color: #450E30;
 }
 
-.feed {
+.links {
+    font-size: 40px;
     text-align: center;
 }
 
-.atualiz {
+.feed {
+    text-align: center;
+    margin: 0 67px;
+}
+
+.post {
+    display: flex;
+    gap: 12px;
     text-align: justify;
-    margin-left: 260px;
-    margin-top: 40px;
+}
+
+.header {
+    display: flex;
+}
+
+.data {
+    font-size: 14px;
+    color: #888;
+}
+
+.texto {
+    margin: 6px 0 12px;
+}
+
+.nome,
+.usuario,
+.data {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
 }
 
 
@@ -152,6 +175,10 @@ span {
 
 /* geral */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #fd789d;
     margin: 0;
@@ -159,7 +186,7 @@ body {
 }
 
 .main {
-    padding: 100px;
+    padding: 75px;
     margin: 30px 200px;
     background-color: #faffc7;
     border-style: double;
@@ -179,14 +206,6 @@ footer {
     text-align: center;
     margin-top: 40px;
     color: #450E30;
-}
-
-.parag,
-.paragreceitas,
-ol,
-ul,
-label {
-    font-size: 20px;
 }
 
 
@@ -218,7 +237,6 @@ summary:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
     margin-left: 100px;
 }
 
@@ -267,14 +285,13 @@ input:not(#html, #css, #js) {
 
 th {
     color: #450E30;
-    font-size: 20px;
 }
 
 td,
 th {
     text-align: left;
     padding: 8px;
-    border: #fd789d solid 1px;
+    border: #450E30 solid 1px;
 }
 
 table {
@@ -300,4 +317,19 @@ table {
     justify-content: space-evenly;
     margin-bottom: 50px;
 
+}
+
+
+/* funcoes js */
+
+.textoNormal {
+    font-size: 20px;
+}
+
+.aumentarTexto {
+    font-size: 26px;
+}
+
+.diminuirTexto {
+    font-size: 14px;
 }

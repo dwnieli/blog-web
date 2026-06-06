@@ -7,8 +7,11 @@
   <title>Meu Blog 🎀</title>
 
   <link href="./css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/interatividade.css">
+  <!-- icones -->
   <script src="https://kit.fontawesome.com/870a34a90c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+  <!-- fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&display=swap" rel="stylesheet">
@@ -20,9 +23,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
-  <!-- - -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
 
 </head>
 
@@ -38,13 +38,13 @@
     </div>
 
     <div>
-      <span class="material-symbols-outlined">
+      <span class="material-symbols-outlined aumentarTexto" onclick="aumentarFonte()">
         text_increase
       </span>
-      <span class="material-symbols-outlined">
+      <span class="material-symbols-outlined textoNormal" onclick="fonteNormal()">
         rotate_auto
       </span>
-      <span class="material-symbols-outlined">
+      <span class="material-symbols-outlined diminuirTexto" onclick="diminuirFonte()">
         text_decrease
       </span>
       <span class="material-symbols-outlined">
@@ -53,14 +53,20 @@
     </div>
 
   </nav>
-  
+
   <main>
+
     <div class="index_main">
       <div class="tituloindex">
         <p>Seja bem-vindo (a)<br>ao meu blog!</p>
         <img src="./assets/saturn.gif" width="300px">
       </div>
-      <br>
+
+      <div class="links">
+        <a href="mailto:danivnarciso@gmail.com"><i class="fa-solid fa-at"></i></a>
+        <a href="https://www.linkedin.com/in/danielinarciso"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/dwnieli"><i class="fa-brands fa-github"></i></a>
+      </div>
 
       <br><br>
       <hr>
@@ -69,14 +75,81 @@
       <div class="feed">
         <h1>Últimas atualizações</h1>
 
-        <div class="atualiz">
-          <p><i>02/03/2026 14:22:06:</i><b>Dani</b> atualizou a página <a href="./pages/curriculum.html">Currículo</a>.
-          </p>
-          <p><i>01/06/2026 11:18:49:</i><b>Dani</b> atualizou a página <a href="./pages/about.html">Sobre mim</a>.</p>
-          <p><i>24/05/2026 20:13:14:</i><b>Dani</b> atualizou a página <a href="./pages/contact.html">Contato</a>.</p>
-          <p><i>20/05/2026 18:32:41:</i><b>Dani</b> atualizou a página <a href="./pages/receitas.html">Receitas</a>.</p>
-          <p><i>24/03/2026 19:26:03:</i><b>Dani</b> criou as páginas do blog.</p>
-          <p><i>24/03/2026 19:18:18:</i><b>Dani</b> criou o blog.</p>
+        <div class="post">
+          <div class="avatar"><img src="./assets/avatar.jpeg" alt="avatar" width="50px"></div>
+          <div class="conteudo">
+            <div class="header">
+              <span class="nome">Dani</span>
+              <span class="data">· 06/06/2026 17:14:27:</span>
+            </div>
+            <p class="texto">Adicionando funções JavaScript! 😬</p>
+          </div>
+        </div>
+
+        <div class="post">
+          <div><img src="./assets/avatar.jpeg" alt="avatar" width="50px"></div>
+          <div>
+            <div class="header">
+              <span class="nome">Dani</span>
+              <span class="data">· 02/03/2026 14:22:06:</span>
+            </div>
+            <p class="texto">Currículo atualizado.</p>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="avatar"><img src="./assets/avatar.jpeg" alt="avatar" width="50px"></div>
+          <div>
+            <div class="header">
+              <span class="nome">Dani</span>
+              <span class="data">· 02/06/2026 14:48:19:</span>
+            </div>
+            <p class="texto">Página de contato atualizada. 📞</p>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="avatar"><img src="./assets/avatar.jpeg" alt="avatar" width="50px"></div>
+          <div>
+            <div class="header">
+              <span class="nome">Dani</span>
+              <span class="data">· 01/06/2026 11:18:49:</span>
+            </div>
+            <p class="texto">Acabei de finalizar a página about!!! </p>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="avatar"><img src="./assets/avatar.jpeg" alt="avatar" width="50px"></div>
+          <div>
+            <div class="header">
+              <span class="nome">Dani</span>
+              <span class="data">· 20/05/2026 18:32:41:</span>
+            </div>
+            <p class="texto">Feito a página de receitas 😋</p>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="avatar"><img src="./assets/avatar.jpeg" alt="avatar" width="50px"></div>
+          <div>
+            <div class="header">
+              <span class="nome">Dani</span>
+              <span class="data">· 24/03/2026 19:26:03:</span>
+            </div>
+            <p class="texto">Acabo de criar as primeiras páginas do blog 😼</p>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="avatar"><img src="./assets/avatar.jpeg" alt="avatar" width="50px"></div>
+          <div>
+            <div class="header">
+              <span class="nome">Dani</span>
+              <span class="data">· 24/03/2026 19:18:18:</span>
+            </div>
+            <p class="texto">Dando início ao blog 🚀</p>
+          </div>
         </div>
 
       </div>
@@ -84,9 +157,14 @@
       <br><br>
       <hr>
 
+      <footer>
+        <p>Feito com ❤︎⁠ por Daniéli</p>
+      </footer>
+
     </div>
   </main>
 
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
