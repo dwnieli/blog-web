@@ -1,0 +1,104 @@
+/* darkmode */
+
+
+.darkmode h1 {
+    color: #faffc7;
+}
+
+.darkmode h2 {
+    color: #fd789d;
+}
+
+.darkmode footer {
+    color: #fd789d;
+}
+
+.darkmode .tituloindex {
+    color: #fd789d;
+}
+
+.darkmode body {
+    background-color: #000;
+    background-image:
+        radial-gradient(#450E30 3px, transparent 1px),
+        radial-gradient(#450E30 3px, transparent 1px);
+    background-size: 100px 100px;
+}
+
+.darkmode .main {
+    background-color: #450e30e1;
+    border-color: #fd789d;
+}
+
+.darkmode .titulo { 
+    color: #faffc7;
+}
+
+.darkmode footer {
+    color: #faffc7;
+}
+
+.darkmode nav {
+    background-color: #450E30;
+}
+
+.darkmode .parag {
+    color: #faffc7;
+}
+
+.darkmode .paragreceitas {
+    color: #fd789d;
+}
+
+
+/* index */
+
+.darkmode .index_main {
+    border-color: #fd789d;
+    background-color: #450e30e1;
+}
+
+.darkmode .tituloindex {
+    color: #faffc7;
+}
+
+
+/* receitas */
+
+.darkmode summary {
+    color: #faffc7;
+}
+.darkmode ul {
+    color: #faffc7;
+}
+
+.darkmode ol {
+    color: #faffc7;
+}
+
+.darkmode summary:hover {
+    color: #fd789d;
+}
+
+
+/* contato */
+
+.darkmode label {
+    color: #faffc7;
+}
+
+
+/* curriculo */
+
+.darkmode th {
+    color: #fd789d;
+}
+
+.darkmode th {
+    border: #faffc7 solid 1px;
+}
+
+.darkmode td {
+    border: #faffc7 solid 1px;
+    color: #faffc7;
+}
