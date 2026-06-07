@@ -9,6 +9,7 @@ fontes google
 - averia
 - jersey 15 */
 
+
 /* fontes */
 
 .elsie-swash-caps-regular,
@@ -40,7 +41,8 @@ a {
 ul,
 ol,
 label,
-th {
+th,
+.biscoito {
     font-family: "Averia Serif Libre", serif;
     font-weight: 400;
     font-style: normal;
@@ -77,6 +79,85 @@ i {
 }
 
 
+/* geral */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fd789d;
+    background-image:
+        radial-gradient(#f0c5d4 3px, transparent 1px),
+        radial-gradient(#f0c5d4 3px, transparent 1px);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+    margin: 0;
+}
+
+.main {
+    padding: 75px;
+    margin: 50px 200px;
+    background-color: #faffc7;
+    border-style: double;
+    border-color: #450E30;
+    border-width: 10px;
+    border-radius: 40px;
+}
+
+.titulo {
+    color: #450E30;
+    font-size: 60px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #450E30;
+}
+
+
+/* nav bar */
+
+nav {
+    background-color: #450E30;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+}
+
+nav a {
+    color: #450E30;
+    background-color: white;
+    border-radius: 22px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #f0c5d4;
+}
+
+span {
+    color: #450E30;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+}
+
+span:hover {
+    background-color: #f0c5d4;
+}
+
+
 /* index */
 
 .index_main {
@@ -89,7 +170,6 @@ i {
     margin: 55px 250px;
 }
 
-
 .tituloindex {
     display: flex;
     justify-content: space-evenly;
@@ -98,10 +178,44 @@ i {
     color: #450E30;
 }
 
-.links {
-    font-size: 40px;
-    text-align: center;
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
 }
+
+.links {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    font-size: 40px;
+    background-color: #fd789d;
+    padding: 10px;
+    border: #faffc7 double 8px;
+    border-radius: 50px;
+    
+}
+
+.biscoito {
+    font-size: 20px;
+    color: #450E30;
+    text-align: center;
+    background-color: #fd789d;
+    border: #faffc7 double 8px;
+    border-radius: 50px;
+}
+
+.links a {
+    color: #450E30;
+    padding: 10px 25px;
+}
+
+.biscoito p {
+    padding: 10px 75px;
+}
+
+
 
 .feed {
     text-align: center;
@@ -134,78 +248,6 @@ i {
     border: none;
     border-radius: 0;
     padding: 0;
-}
-
-
-/* nav bar */
-
-nav {
-    background-color: #450E30;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: sticky;
-    top: 0;
-    padding: 15px;
-}
-
-nav a {
-    color: #450E30;
-    background-color: white;
-    border-radius: 22px;
-    font-size: 20px;
-    margin: 10px;
-    padding: 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #f6d8d6;
-}
-
-span {
-    color: #450E30;
-    background-color: white;
-    border-radius: 50%;
-    padding: 8px;
-    margin: 5px;
-
-}
-
-
-/* geral */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #fd789d;
-    margin: 0;
-    padding: 0;
-}
-
-.main {
-    padding: 75px;
-    margin: 30px 200px;
-    background-color: #faffc7;
-    border-style: double;
-    border-color: #450E30;
-    border-width: 10px;
-    border-radius: 50px;
-}
-
-.titulo {
-    color: #450E30;
-    font-size: 60px;
-    margin-top: 15px;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    color: #450E30;
 }
 
 
@@ -316,7 +358,6 @@ table {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
-
 }
 
 
