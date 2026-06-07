@@ -374,3 +374,37 @@ table {
 .diminuirTexto {
     font-size: 14px;
 }
+
+
+
+
+/* darkmode */
+
+.darkmode body {
+    background-color: #450E30;
+    background-image:
+        radial-gradient(#fd789d 3px, transparent 1px),
+        radial-gradient(#fd789d 3px, transparent 1px);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+    margin: 0;
+}
+
+.darkmode nav {
+    background-color: #fd789d;
+}
+
+.darkmode .index_main {
+    background-color: #000000;
+    color: #faffc7;
+    border-color: #fd789d;
+}
+
+/* .darkmode .tituloindex, h1, h2, h3, h4, h5, h6, .nome, .titulo, footer, summary {
+    color: #fd789d;
+} */
+
+.darkmode .main {
+    background-color: #000000;
+    border-color: #fd789d;
+}
