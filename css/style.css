@@ -188,13 +188,12 @@ span:hover {
 .links {
     display: flex;
     flex-direction: row-reverse;
-    text-align: center;
     font-size: 40px;
-    background-color: #fd789d;
     padding: 10px;
+    text-align: center;
+    background-color: #fd789d;
     border: #faffc7 double 8px;
     border-radius: 50px;
-    
 }
 
 .biscoito {
@@ -211,13 +210,21 @@ span:hover {
     padding: 10px 25px;
 }
 
+.links a:hover {
+    color: #faffc7;
+}
+
 .biscoito p {
     padding: 10px 75px;
 }
 
+.biscoito p:hover {
+    color: #faffc7;
+}
+
 .feed {
     text-align: center;
-    margin: 0 67px;
+    margin: 0 100px;
 }
 
 .avatar img {
@@ -236,16 +243,20 @@ span:hover {
 }
 
 .data {
-    font-size: 14px;
+    text-align: center;
     color: #888;
 }
 
 .texto {
     margin: 0px 5px;
+    text-align: justify;    
+}
+
+.nome {
+    color: #fd789d;
 }
 
 .nome,
-.usuario,
 .data {
     background: none;
     border: none;
@@ -356,10 +367,6 @@ table {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
-}
-
-.experiencia p {
-    margin: 0;
 }
 
 

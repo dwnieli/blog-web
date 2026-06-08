@@ -13,10 +13,6 @@
     color: #fd789d;
 }
 
-.darkmode .tituloindex {
-    color: #fd789d;
-}
-
 .darkmode body {
     background-color: #000;
     background-image:
@@ -46,10 +42,6 @@
     color: #faffc7;
 }
 
-.darkmode .paragreceitas {
-    color: #fd789d;
-}
-
 
 /* index */
 
@@ -59,6 +51,14 @@
 }
 
 .darkmode .tituloindex {
+    color: #faffc7;
+}
+
+.darkmode .nome {
+    color: #fd789d;
+}
+
+.darkmode .texto {
     color: #faffc7;
 }
 
@@ -77,6 +77,10 @@
 }
 
 .darkmode summary:hover {
+    color: #fd789d;
+}
+
+.darkmode .paragreceitas {
     color: #fd789d;
 }
 
