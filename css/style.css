@@ -97,12 +97,12 @@ body {
 
 .main {
     padding: 75px;
-    margin: 50px 200px;
+    margin: 30px 200px;
     background-color: #faffc7c9;
     border-style: double;
     border-color: #450E30;
     border-width: 10px;
-    border-radius: 40px;
+    border-radius: 10px;
 }
 
 .titulo {
@@ -215,17 +215,20 @@ span:hover {
     padding: 10px 75px;
 }
 
-
-
 .feed {
     text-align: center;
     margin: 0 67px;
 }
 
+.avatar img {
+    border-radius: 50%;
+    border-color: black;
+    border: solid 3px;
+}
+
 .post {
     display: flex;
     gap: 12px;
-    text-align: justify;
 }
 
 .header {
@@ -238,7 +241,7 @@ span:hover {
 }
 
 .texto {
-    margin: 6px 0 12px;
+    margin: 0px 5px;
 }
 
 .nome,
@@ -299,6 +302,10 @@ input:not(#html, #css, #js) {
     height: 40px;
 }
 
+textarea {
+    width: 60%;
+}
+
 
 /* about */
 
@@ -308,15 +315,15 @@ input:not(#html, #css, #js) {
     align-items: center;
 }
 
+.curiosidade img {
+    border-radius: 20%;
+}
+
 .fotokoda {
     margin-right: 50px;
 }
 
-.about {
-    text-align: center;
-}
-
-.album {
+.about, .album {
     text-align: center;
 }
 
@@ -325,6 +332,7 @@ input:not(#html, #css, #js) {
 
 th {
     color: #450E30;
+    font-weight: bold;
 }
 
 td,
@@ -340,15 +348,7 @@ table {
     margin: 0 auto;
 }
 
-.competencias {
-    text-align: center;
-}
-
-.experiencia h1 {
-    text-align: center;
-}
-
-.titulocurriculo {
+.competencias, .titulocurriculo {
     text-align: center;
 }
 
@@ -356,6 +356,10 @@ table {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
+}
+
+.experiencia p {
+    margin: 0;
 }
 
 

@@ -36,12 +36,20 @@ function gerarFrase() {
 function mudarTema() {
   document.documentElement.classList.toggle("darkmode")
 
-
   const icone = document.querySelector(".material-symbols-outlined.mudarTema")
 
   if (document.documentElement.classList.contains("darkmode")) {
     icone.textContent = "light_mode"
   } else {
     icone.textContent = "dark_mode"
+  }
+}
+
+
+function enviarForm() {
+  const form = document.getElementById('formulario');
+  
+  if (form.checkValidity()) {
+    alert("Formulário enviado com sucesso! 😼");
   }
 }
