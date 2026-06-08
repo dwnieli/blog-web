@@ -96,13 +96,10 @@
 
 .darkmode th {
     color: #fd789d;
-}
-
-.darkmode th {
     border: #faffc7 solid 1px;
 }
 
 .darkmode td {
-    border: #faffc7 solid 1px;
     color: #faffc7;
+    border: #faffc7 solid 1px;
 }

@@ -47,7 +47,7 @@ function mudarTema() {
 
 
 function enviarForm() {
-  const form = document.getElementById('formulario');
+  const form = document.getElementById("formulario");
   
   if (form.checkValidity()) {
     alert("Formulário enviado com sucesso! 😼");
