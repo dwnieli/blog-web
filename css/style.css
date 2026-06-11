@@ -10,6 +10,10 @@ html {
     --nav-hover: #f0c5d4;
 }
 
+.parag {
+    font-size: 20px;
+}
+
 /* fontes */
 
 .elsie-swash-caps-regular,
@@ -161,7 +165,7 @@ nav span:hover {
     border-radius: 50px;
     background-color: var(--bg-box);
     padding: 55px;
-    margin: 55px 250px;
+    margin: 15px 250px;
 }
 
 .tituloindex {
@@ -302,8 +306,13 @@ textarea {
     flex-direction: column;
     margin: 20px;
     padding: 10px;
-    border: #888 solid 2px;
+    background-color: #faffc7a9;
+    border: #ffffff solid 2px;
     border-radius: 10px;
+}
+
+.barcontent a {
+    text-decoration: none;
 }
 
 .scrollbar img {
