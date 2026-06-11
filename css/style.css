@@ -3,8 +3,8 @@ html {
 }
 
 :root {
-    --bg-body: #fd789d;
-    --bg-box: #faffc79f;
+    --bg-body: #fd789ed1;
+    --bg-box: #ffffffb4;
     --button-color: #ffffff;
     --text-color: #450E30;
     --nav-hover: #f0c5d4;
@@ -34,8 +34,7 @@ summary {
 
 .jersey-10-regular,
 a,
-.barcontent h1,
-.biscoito {
+.barcontent h1 {
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -47,7 +46,8 @@ a,
 ul,
 ol,
 label,
-th{
+th,
+.biscoito {
     font-family: "Averia Serif Libre", serif;
     font-weight: 400;
     font-style: normal;
@@ -92,15 +92,19 @@ i {
 
 body {
     background-color: var(--bg-body);
+    background-image: repeating-linear-gradient(45deg,
+            #e2e8f0,
+            #e2e8f0 1px,
+            transparent 1px,
+            transparent 80px);
     margin: 0;
 }
 
 .main {
     padding: 75px;
-    margin: 30px 200px;
+    margin: 20px 200px;
     background-color: var(--bg-box);
-    border-radius: 10px;
-    border: var(--text-color) solid 3px;
+    border-radius: 5px;
 }
 
 .titulo {
@@ -284,6 +288,7 @@ textarea {
 
 .curiosidade img {
     border-radius: 20%;
+    border: #000 solid 3px;
 }
 
 .fotokoda {
@@ -306,23 +311,31 @@ textarea {
     flex-direction: column;
     margin: 20px;
     padding: 10px;
-    background-color: #faffc7a9;
-    border: #ffffff solid 2px;
+    background-color: var(--bg-body);
+    border: #000 solid 2px;
     border-radius: 10px;
+}
+
+.barcontent:hover {
+    background-color: var(--text-color);
 }
 
 .barcontent a {
     text-decoration: none;
 }
 
+.barcontent a:hover {
+    text-decoration: none;
+}
+
 .scrollbar img {
     width: 250px;
+    border: #000 solid 2px;
     border-radius: 10px;
 }
 
-.scrollbar h1:hover {
-    color: var(--bg-body);
-    font-weight: bold;
+.scrollbar h1 {
+    color: var(--button-color);
 }
 
 .favs {

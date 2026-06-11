@@ -15,10 +15,11 @@
 
 .darkmode body {
     background-color: #000;
-    background-image:
-        radial-gradient(#450E30 3px, transparent 1px),
-        radial-gradient(#450E30 3px, transparent 1px);
-    background-size: 100px 100px;
+    background-image: repeating-linear-gradient(45deg,
+            #e2e8f0,
+            #e2e8f0 1px,
+            transparent 1px,
+            transparent 80px);
 }
 
 .darkmode .main {
