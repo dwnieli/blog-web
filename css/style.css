@@ -1,13 +1,14 @@
-/* cores
-#fd789d bg index
-#faffc7 box
-#white botoes
-#450E30 texto e borda
+html {
+    scroll-behavior: smooth;
+}
 
-fontes google
-- elsie 
-- averia
-- jersey 15 */
+:root {
+    --bg-body: #fd789d;
+    --bg-box: #faffc79f;
+    --button-color: #ffffff;
+    --text-color: #450E30;
+    --nav-hover: #f0c5d4;
+}
 
 /* fontes */
 
@@ -24,11 +25,13 @@ summary {
     font-family: "Elsie Swash Caps", serif;
     font-weight: 400;
     font-style: normal;
-    color: #450E30;
+    color: var(--text-color);
 }
 
 .jersey-10-regular,
-a {
+a,
+.barcontent h1,
+.biscoito {
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -40,8 +43,7 @@ a {
 ul,
 ol,
 label,
-th,
-.biscoito {
+th{
     font-family: "Averia Serif Libre", serif;
     font-weight: 400;
     font-style: normal;
@@ -69,12 +71,12 @@ i {
     height: 60px;
     border-radius: 50%;
     border-style: solid;
-    background-color: white;
+    background-color: var(--button-color);
 }
 
 #botaovoltar {
     font-size: 36px;
-    color: #450E30;
+    color: var(--text-color);
 }
 
 
@@ -85,27 +87,20 @@ i {
 }
 
 body {
-    background-color: #fd789d;
-    background-image:
-        radial-gradient(#f0c5d4 3px, transparent 1px),
-        radial-gradient(#f0c5d4 3px, transparent 1px);
-    background-size: 100px 100px;
-    background-position: 0 0, 50px 50px;
+    background-color: var(--bg-body);
     margin: 0;
 }
 
 .main {
     padding: 75px;
     margin: 30px 200px;
-    background-color: #faffc7c9;
-    border-style: double;
-    border-color: #450E30;
-    border-width: 10px;
+    background-color: var(--bg-box);
     border-radius: 10px;
+    border: var(--text-color) solid 3px;
 }
 
 .titulo {
-    color: #450E30;
+    color: var(--text-color);
     font-size: 60px;
     margin-top: 15px;
     text-align: center;
@@ -114,14 +109,14 @@ body {
 footer {
     text-align: center;
     margin-top: 40px;
-    color: #450E30;
+    color: var(--text-color);
 }
 
 
 /* nav bar */
 
 nav {
-    background-color: #450E30;
+    background-color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -131,8 +126,8 @@ nav {
 }
 
 nav a {
-    color: #450E30;
-    background-color: white;
+    color: var(--text-color);
+    background-color: var(--button-color);
     border-radius: 22px;
     font-size: 20px;
     margin: 10px;
@@ -141,19 +136,19 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #f0c5d4;
+    background-color: var(--nav-hover);
 }
 
-span {
-    color: #450E30;
-    background-color: white;
+nav span {
+    color: var(--text-color);
+    background-color: var(--button-color);
     border-radius: 50%;
     padding: 8px;
     margin: 5px;
 }
 
-span:hover {
-    background-color: #f0c5d4;
+nav span:hover {
+    background-color: var(--nav-hover);
 }
 
 
@@ -161,10 +156,10 @@ span:hover {
 
 .index_main {
     border-style: double;
-    border-color: #450E30;
+    border-color: var(--text-color);
     border-width: 10px;
     border-radius: 50px;
-    background-color: #faffc7c9;
+    background-color: var(--bg-box);
     padding: 55px;
     margin: 55px 250px;
 }
@@ -174,7 +169,7 @@ span:hover {
     justify-content: space-evenly;
     align-items: center;
     font-size: 65px;
-    color: #450E30;
+    color: var(--text-color);
 }
 
 .menu {
@@ -190,27 +185,27 @@ span:hover {
     font-size: 40px;
     padding: 10px;
     text-align: center;
-    background-color: #fd789d;
-    border: #faffc7 double 8px;
+    background-color: var(--bg-body);
+    border: var(--bg-box) double 8px;
     border-radius: 50px;
 }
 
 .biscoito {
     font-size: 20px;
-    color: #450E30;
+    color: var(--text-color);
     text-align: center;
-    background-color: #fd789d;
-    border: #faffc7 double 8px;
+    background-color: var(--bg-body);
+    border: var(--bg-box) double 8px;
     border-radius: 50px;
 }
 
 .links a {
-    color: #450E30;
+    color: var(--text-color);
     padding: 10px 25px;
 }
 
 .links a:hover {
-    color: #faffc7;
+    color: var(--bg-box);
 }
 
 .biscoito p {
@@ -218,49 +213,7 @@ span:hover {
 }
 
 .biscoito p:hover {
-    color: #faffc7;
-}
-
-.feed {
-    text-align: center;
-    margin: 0 100px;
-}
-
-.avatar img {
-    border-radius: 50%;
-    border-color: black;
-    border: solid 3px;
-}
-
-.post {
-    display: flex;
-    gap: 12px;
-}
-
-.header {
-    display: flex;
-}
-
-.data {
-    text-align: center;
-    color: #888;
-}
-
-.texto {
-    margin: 0px 5px;
-    text-align: justify;    
-}
-
-.nome {
-    color: #fd789d;
-}
-
-.nome,
-.data {
-    background: none;
-    border: none;
-    border-radius: 0;
-    padding: 0;
+    color: var(--bg-box);
 }
 
 
@@ -272,13 +225,13 @@ span:hover {
 
 summary {
     font-size: 40px;
-    color: #450E30;
+    color: var(--text-color);
     padding-left: 80px;
     padding-bottom: 15px;
 }
 
 summary:hover {
-    color: #fd789d;
+    color: var(--bg-body);
 }
 
 .receita {
@@ -333,7 +286,37 @@ textarea {
     margin-right: 50px;
 }
 
-.about, .album {
+.about,
+.album {
+    text-align: center;
+}
+
+.scrollbar {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.barcontent {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    border: #888 solid 2px;
+    border-radius: 10px;
+}
+
+.scrollbar img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.scrollbar h1:hover {
+    color: var(--bg-body);
+    font-weight: bold;
+}
+
+.favs {
     text-align: center;
 }
 
@@ -341,7 +324,7 @@ textarea {
 /* curriculo */
 
 th {
-    color: #450E30;
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -349,7 +332,7 @@ td,
 th {
     text-align: left;
     padding: 8px;
-    border: #450E30 solid 1px;
+    border: var(--text-color) solid 1px;
 }
 
 table {
@@ -358,7 +341,8 @@ table {
     margin: 0 auto;
 }
 
-.competencias, .titulocurriculo {
+.competencias,
+.titulocurriculo {
     text-align: center;
 }
 
