@@ -9,15 +9,11 @@
     color: #fd789d;
 }
 
-.darkmode footer {
-    color: #fd789d;
-}
-
 .darkmode body {
     background-color: #000;
     background-image: repeating-linear-gradient(45deg,
-            #e2e8f0,
-            #e2e8f0 1px,
+            #450e30e1,
+            #450e30e1 1px,
             transparent 1px,
             transparent 80px);
 }
@@ -27,7 +23,7 @@
     border-color: #fd789d;
 }
 
-.darkmode .titulo { 
+.darkmode .titulo {
     color: #faffc7;
 }
 
@@ -55,20 +51,13 @@
     color: #faffc7;
 }
 
-.darkmode .nome {
-    color: #fd789d;
-}
-
-.darkmode .texto {
-    color: #faffc7;
-}
-
 
 /* receitas */
 
 .darkmode summary {
     color: #faffc7;
 }
+
 .darkmode ul {
     color: #faffc7;
 }
@@ -82,7 +71,7 @@
 }
 
 .darkmode .paragreceitas {
-    color: #fd789d;
+    color: #faffc7;
 }
 
 
@@ -103,4 +92,11 @@
 .darkmode td {
     color: #faffc7;
     border: #faffc7 solid 1px;
+}
+
+
+/* about */
+
+.darkmode .barcontent:hover {
+    background-color: #2b1620d1;
 }

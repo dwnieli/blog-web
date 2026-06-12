@@ -1,6 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
+/* geral */
 
 :root {
     --bg-body: #fd789ed1;
@@ -10,9 +8,128 @@ html {
     --nav-hover: #f0c5d4;
 }
 
-.parag {
-    font-size: 20px;
+html {
+    scroll-behavior: smooth;
 }
+
+* {
+    box-sizing: border-box;
+    transition: background-color 2s ease, color 0.5s ease, font-size 0.5s ease;
+}
+
+body {
+    background-color: var(--bg-body);
+    background-image: repeating-linear-gradient(45deg,
+            #e2e8f0,
+            #e2e8f0 1px,
+            transparent 1px,
+            transparent 80px);
+    margin: 0;
+}
+
+.main {
+    padding: 75px;
+    margin: 20px 200px;
+    background-color: var(--bg-box);
+    border-radius: 5px;
+}
+
+.titulo {
+    color: var(--text-color);
+    font-size: 60px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--text-color);
+}
+
+
+/* scroll */
+
+.scrollbar {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.barcontent {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--bg-body);
+    border: #000 solid 2px;
+    border-radius: 10px;
+}
+
+.barcontent:hover {
+    background-color: var(--text-color);
+    transform: scale(1.07);
+    transition: transform 0.7s ease;
+}
+
+.barcontent a {
+    text-decoration: none;
+}
+
+.scrollbar img {
+    width: 250px;
+    border: #000 solid 2px;
+    border-radius: 10px;
+}
+
+.scrollbar h1 {
+    color: var(--button-color);
+}
+
+.favs {
+    text-align: center;
+}
+
+
+/* nav bar */
+
+nav {
+    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    z-index: 99999;
+}
+
+nav a {
+    color: var(--text-color);
+    background-color: var(--button-color);
+    border-radius: 22px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover);
+}
+
+nav span {
+    color: var(--text-color);
+    background-color: var(--button-color);
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+}
+
+nav span:hover {
+    background-color: var(--nav-hover);
+}
+
 
 /* fontes */
 
@@ -81,82 +198,6 @@ i {
 #botaovoltar {
     font-size: 36px;
     color: var(--text-color);
-}
-
-
-/* geral */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--bg-body);
-    background-image: repeating-linear-gradient(45deg,
-            #e2e8f0,
-            #e2e8f0 1px,
-            transparent 1px,
-            transparent 80px);
-    margin: 0;
-}
-
-.main {
-    padding: 75px;
-    margin: 20px 200px;
-    background-color: var(--bg-box);
-    border-radius: 5px;
-}
-
-.titulo {
-    color: var(--text-color);
-    font-size: 60px;
-    margin-top: 15px;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    color: var(--text-color);
-}
-
-
-/* nav bar */
-
-nav {
-    background-color: var(--text-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: sticky;
-    top: 0;
-    padding: 15px;
-}
-
-nav a {
-    color: var(--text-color);
-    background-color: var(--button-color);
-    border-radius: 22px;
-    font-size: 20px;
-    margin: 10px;
-    padding: 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: var(--nav-hover);
-}
-
-nav span {
-    color: var(--text-color);
-    background-color: var(--button-color);
-    border-radius: 50%;
-    padding: 8px;
-    margin: 5px;
-}
-
-nav span:hover {
-    background-color: var(--nav-hover);
 }
 
 
@@ -253,10 +294,10 @@ summary:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
-input:not(#html, #css, #js) {
+input {
     width: 60%;
     height: 30px;
 }
@@ -280,13 +321,13 @@ textarea {
 
 /* about */
 
-.curiosidade {
+.koda {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.curiosidade img {
+.koda img {
     border-radius: 20%;
     border: #000 solid 3px;
 }
@@ -295,50 +336,7 @@ textarea {
     margin-right: 50px;
 }
 
-.about,
-.album {
-    text-align: center;
-}
-
-.scrollbar {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-}
-
-.barcontent {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px;
-    background-color: var(--bg-body);
-    border: #000 solid 2px;
-    border-radius: 10px;
-}
-
-.barcontent:hover {
-    background-color: var(--text-color);
-}
-
-.barcontent a {
-    text-decoration: none;
-}
-
-.barcontent a:hover {
-    text-decoration: none;
-}
-
-.scrollbar img {
-    width: 250px;
-    border: #000 solid 2px;
-    border-radius: 10px;
-}
-
-.scrollbar h1 {
-    color: var(--button-color);
-}
-
-.favs {
+.about {
     text-align: center;
 }
 
@@ -359,19 +357,11 @@ th {
 
 table {
     border-collapse: collapse;
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
 }
 
-.competencias,
 .titulocurriculo {
     text-align: center;
-}
-
-.experiencia {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
 }
 
 
